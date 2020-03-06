@@ -1,0 +1,4 @@
+not only files and folders called nvidia but also specifc implementation for calamares is required
+for now run_before_mksquashfs changes the yaml file from standard to nvidia netinstaller.
+
+sed -i 's?groupsUrl: https://github.com/endeavouros-team/install-scripts/raw/master/netinstall.yaml?groupsUrl: https://github.com/endeavouros-team/install-scripts/raw/master/netinstall_nvidia.yaml?' /usr/share/calamares/modules/netinstall.conf
