@@ -27,7 +27,11 @@ isolinux_standard
 echo "Type 1 for standard iso"
 echo "Type 2 for nvidia iso"
 read answer
-if [[ $answer != 2 ]] && answer="1"
+
+if [[ $answer != 2 ]]
+then answer="1"
+fi
+
 case $answer in
     1)
     for x in "${_standard_array[@]}"
@@ -42,7 +46,7 @@ case $answer in
     # Ugly
     do
     rm -rf $(echo $x |sed -r 's/(.*)_.*/\1 /')
-    cp -pra $x $($x |sed -r 's/(.*)_.*/\1 /')
+    cp -pra $x $(echo $x |sed -r 's/(.*)_.*/\1 /')
     done
     ;;
 
