@@ -247,7 +247,7 @@ vpnc
 xl2tpd
 
 # calamares.endeavour
-calamares_current
+calamares_test
 #calamares_offline
 # calamares.dependencies
 lsb-release
