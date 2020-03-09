@@ -63,12 +63,12 @@ xf86-input-libinput
 # synaptics is no longer actively updated.
 # If possible, use libinput.
 #xf86-input-synaptics
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-fbdev
-xf86-video-intel
+#xf86-video-amdgpu
+#xf86-video-ati
+#xf86-video-fbdev
+#xf86-video-intel
 #xf86-video-nouveau
-#nvidia-installer-dkms
+nvidia-installer-dkms
 nvidia
 nvidia-utils
 nvidia-settings
